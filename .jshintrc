@@ -2,7 +2,11 @@
   "predef": [
     "document",
     "window",
-    "-Promise"
+    "-Promise",
+    "expectComponent",
+    "clickComponent",
+    "expectElement",
+    "expectNoElement"
   ],
   "browser": true,
   "boss": true,

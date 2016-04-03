@@ -1,0 +1,5 @@
+@mixin text-overflow {
+  display: block;
+  overflow: hidden;
+  text-indent: -100000px;
+}

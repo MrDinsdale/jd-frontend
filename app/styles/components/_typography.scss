@@ -1,0 +1,152 @@
+body {
+  color: $grey-dark;
+  font-family: $font-pn;
+  font-weight: 100;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font-pnec;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.section-head__wrapper {
+  &--center {
+    text-align: center;
+
+    hr {
+      margin: .5em auto 1em;
+    }
+  }
+
+  @media(max-width: $break-m) {
+    text-align: center;
+
+    hr {
+      margin: .5em auto 1em;
+    }
+  }
+}
+
+hr {
+  background-color: $grey-dark;
+  border: 0;
+  height: .25em;
+  margin: .5em 0 1em;
+  width: 2em;
+}
+
+em code {
+  color: $orange;
+  font-size: .75em;
+}
+
+pre {
+  background-color: $cream;
+  font-size: .875em;
+  overflow: visible;
+  margin: -1em 0 2em;
+  padding: 1em 2em;
+  white-space: pre-wrap;
+}
+
+code {
+  word-break: break-word;
+}
+
+blockquote {
+  font-family: $font-tisa;
+  font-size: 1.5em;
+  font-style: italic;
+  margin: 2em -2em 3em;
+
+  @media(max-width: $break-l) {
+    margin: 2em 2em 3em;
+  }
+}
+
+[class*="section-title__title"] {
+  line-height: 1em;
+  margin-bottom: 0;
+}
+
+[class*="section-title__tag"] {
+  color: $orange;
+  font-family: $font-pnec;
+  font-size: .875em;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.section-title {
+  margin-bottom: 4em;
+
+  &__title {
+    font-size: 4em;
+
+    @media(max-width: $break-m) {
+      font-size: 3em;
+    }
+  }
+}
+
+.section-content {
+  &__intro {
+    font-family: $font-pnec;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1.2em;
+
+    em {
+      color: $orange;
+      font-style: normal;
+    }
+
+    @media(max-width: $break-m) {
+      font-size: 1.5em;
+    }
+  }
+  &__compact {
+    margin: 0 auto;
+    max-width: 16em;
+  }
+}
+
+p {
+  font-size: 1.125em;
+
+  @media(max-width: $break-s) {
+    font-size: 1em;
+  }
+}
+
+a {
+  border: none;
+  color: $orange;
+  text-decoration: none;
+  transition: .3s;
+
+  &:hover {
+    color: $grey-mid;
+  }
+}
+
+i {
+  font-style: normal;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.color-white {
+  color: $white;
+}
+
+.bg-white {
+  background-color: $white;
+}
