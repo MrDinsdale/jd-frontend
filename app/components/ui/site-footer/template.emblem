@@ -1,0 +1,6 @@
+.footer.site-footer
+  .cactus__w
+    .cactus__g
+      .cactus__u--1
+        = render 'partials.social-links'
+        small.site-footer__copyright Copyright © Joe Dinsdale 2015. All rights reserved

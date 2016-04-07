@@ -9,16 +9,16 @@ $cactus-gutter: 64px;
 $cactus-gutter-small: 16px;
 
 // Wrapper
-$cactus-wrapper-width: 56em;
+$cactus-wrapper-width: 48em;
 $cactus-wrapper-wide-width: 75em;
 
 // Base grid generator
-$cactus-unit-ratios-base: 1 1, 1 2, 1 3, 2 3, 1 4, 3 4, 1 7, 2 7, 3 7, 4 7, 5 7, 6 7;
+$cactus-unit-ratios-base: 1 1, 1 2, 1 3, 2 3, 1 4, 3 4;
 
 // Grid Unit Config
 
 $break-l: 1100px;
-$cactus-unit-ratios-l: 1 1, 1 2, 1 3, 2 3;
+$cactus-unit-ratios-l: 1 1, 1 2;
 
 $break-m: 920px;
 $cactus-unit-ratios-m: 1 1, 1 2;
@@ -54,6 +54,8 @@ $yellow: #FBD163;
   Fonts
 ==========================*/
 
-$font-pn: "proxima-nova", 'Proxima Nova', sans-serif;
-$font-pnec: "proxima-nova-extra-condensed", 'Proxima Nova Condensed', sans-serif;
-$font-tisa: "ff-tisa-web-pro", serif;
+
+$font-headline: 'Oswald', sans-serif;
+$font-body: 'Merriweather', serif;
+
+// $font-langdon: 'Langdon', sans-serif;

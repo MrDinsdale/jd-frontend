@@ -6,7 +6,10 @@
     "expectComponent",
     "clickComponent",
     "expectElement",
-    "expectNoElement"
+    "expectNoElement",
+    "TimelineLite",
+    "TweenMax",
+    "Power2"
   ],
   "browser": true,
   "boss": true,

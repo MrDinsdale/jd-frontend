@@ -1,0 +1,91 @@
+.nav-button__toggle {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: block;
+  height: 5em;
+  outline: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 5em;
+  z-index: 200;
+}
+
+.nav-button__line {
+  background-color: $white;
+  border-radius: 1em;
+  display: block;
+  height: 2px;
+  left: 1.625em;
+  overflow: hidden;
+  position: absolute;
+  transform-origin: 50% .125em;
+  transition: .3s;
+  -webkit-transform: translate3d(0, 0, 0);
+  width: 1.75em;
+
+  &::after {
+    background-color: $orange;
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+  }
+
+  .nav-button__toggle:hover &::after {
+    width: 100%;
+  }
+}
+
+.nav-button__line--1 {
+  top: 2em;
+
+  &::after {
+    transition: .2s;
+  }
+
+  .nav-open & {
+    background-color: $orange;
+    top: 2.375em;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+.nav-button__line--2 {
+  top: 2.375em;
+
+  &::after {
+    transition: .2s .1s;
+  }
+
+  .nav-open & {
+    background-color: $orange;
+    opacity: 0;
+  }
+}
+
+.nav-button__line--3 {
+  top: 2.75em;
+
+  &::after {
+    transition: .2s .2s;
+  }
+
+  .nav-open & {
+    background-color: $orange;
+    top: 2.375em;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}

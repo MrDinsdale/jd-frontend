@@ -1,0 +1,8 @@
+.site-header-static__inner
+  .jd-block
+    = brand.logo-small-light play=playAnimation
+    span.jd-block__title Joe Dinsdale
+    span.jd-block__subtitle Frontend developer &amp; Designer
+    hr.jd-block__rule
+
+img.site-header-static__border src='/images/ui/dark-border--inverted.png'

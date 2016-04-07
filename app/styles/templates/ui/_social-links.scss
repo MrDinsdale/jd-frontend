@@ -1,0 +1,57 @@
+ul.social-links {
+  display: block;
+  margin: 0 auto;
+  padding: .5em .5em;
+  text-align: center;
+  vertical-align: top;
+
+  li {
+    display: inline-block;
+    height: 3em;
+    margin: 0;
+    padding: .25em;
+    width: 3em;
+
+    a {
+      display: inline-block;
+      padding: 0em;
+      position: relative;
+
+      &::before {
+        background: rgba($orange,0);
+        border-radius: 3em;
+        bottom: .5em;
+        content: '';
+        display: block;
+        left: .5em;
+        position: absolute;
+        right: .5em;
+        top: .5em;
+        transition: .25s;
+      }
+
+      &:hover::before {
+        background: $cream;
+        bottom: -.25em;
+        left: -.25em;
+        right: -.25em;
+        top: -.25em;
+      }
+
+      .ua-ie & {
+        display: block;
+      }
+    }
+  }
+
+  svg {
+    display: block;
+    height: auto;
+    width: 100%;
+    position: relative;
+
+    .social-icon {
+      fill: $grey-dark;
+    }
+  }
+}

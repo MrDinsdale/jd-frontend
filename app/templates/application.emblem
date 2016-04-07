@@ -1,3 +1,6 @@
-h2 Welcome to Ember
+= ui.header.site-header pageScrolled=pageScrolled navState=navState
 
-= outlet
+.site-container class=pageScrolled:scrolled:notScrolled
+  = outlet
+
+= ui.site-footer

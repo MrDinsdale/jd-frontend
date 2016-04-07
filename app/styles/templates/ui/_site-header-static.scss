@@ -1,0 +1,15 @@
+.site-header-static {
+  background: $grey-dark;
+  padding: 6em 0;
+  position: relative;
+  z-index: 50;
+
+  &__border {
+    top: 100%;
+    display: block;
+    left: 0;
+    max-height: 5%;
+    position: absolute;
+    width: 100%;
+  }
+}

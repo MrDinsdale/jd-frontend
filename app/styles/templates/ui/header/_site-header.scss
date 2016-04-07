@@ -1,0 +1,48 @@
+.site-header {
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 200;
+
+  .nav-button__toggle,
+  &__logo {
+    &::before {
+      background-color: $grey-dark;
+      bottom: 0;
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      transition: .5s;
+      width: 0;
+      z-index: -1;
+    }
+  }
+
+  &__logo {
+    padding: .5em 1.675em 0 1.375em;
+    height: 5em;
+    width: 5em;
+    position: relative;
+
+    &::before {
+      left: 0;
+    }
+  }
+
+  .nav-button__toggle {
+    &::before {
+      right: 0;
+    }
+  }
+
+  &.page-scrolled {
+    .nav-button__toggle,
+    .site-header__logo {
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+}
