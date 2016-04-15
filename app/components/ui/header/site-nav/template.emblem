@@ -1,0 +1,7 @@
+#nav-left.site-navigation__half--left
+  = link-to 'work' class='navigation-item navigation-work'
+    span.navigation-item__title data-hover='work' work
+
+#nav-right.site-navigation__half--right
+  = link-to 'blog' class='navigation-item navigation-blog'
+    span.navigation-item__title data-hover='blog' blog

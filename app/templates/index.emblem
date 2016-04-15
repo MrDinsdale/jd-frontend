@@ -1,19 +1,27 @@
 = ui.site-header-static pageScrolled=pageScrolled
 
-.cactus__w
-  section.index-block--about
-    span.title-block--sub Hey, my name is Joe
-    h1.title-block--main I make delicious websites
-    hr
-    p.index-block__intro
-      strong I love all things web. I especially love working on DRY, scalable projects using <em>Ember CLI</em>, <em>Sass</em> and <em>CoffeeScript</em>.
-    p I've worked on a variety of projects for clients such as <em>EE</em>, <em>Microsoft</em> and <em>BBC</em>.
-    p When I'm not working on design or web development I enjoy watching films, playing bass and drinking coffee.
+.page--index
+/ .cactus__w--wide
+/   .cactus__g
+/     .cactus__u--1-2.cactus__u--m-1
+/       span.title-block--sub Hey, my name is Joe
+/       h1.title-block--main
+/         | I make delicious
+/         span  websites
 
-.cactus__g--gutter-none
-  .cactus__u--1-2.cactus__u--m-1
-    .post-tile style="background-image: url('http://joedinsdale.co.uk/images/posts/2015-10-22--working-with-ember-components/featured.jpg')"
-      h2.post-tile__title Working with Ember components
-  .cactus__u--1-2.cactus__u--m-1
-    .post-tile style="background-image: url('http://joedinsdale.co.uk/images/posts/2015-10-25--jumping-into-bem/featured.jpg')"
-      h2.post-tile__title Jumping into BEM
+/   .cactus__g
+/     .cactus__u--1-2.cactus__u--m-1
+/       p.index-block__intro
+/         strong I love all things web. I especially love working on DRY, scalable projects using <em>Ember CLI</em>, <em>Sass</em> and <em>CoffeeScript</em>.
+/       p I've worked on a variety of projects for clients such as <em>EE</em>, <em>Microsoft</em> and <em>BBC</em>.
+/       p When I'm not working on design or web development I enjoy watching films, playing bass and drinking coffee.
+
+
+
+
+/ .cactus__g--gutter-none
+/   .cactus__u--1-2.cactus__u--m-1
+/     = tile.post-tile featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-22--working-with-ember-components/featured.jpg' title='Working with Ember Components'
+
+/   .cactus__u--1-2.cactus__u--m-1
+/     = tile.post-tile featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-25--jumping-into-bem/featured.jpg' title='Jumping into BEM'
