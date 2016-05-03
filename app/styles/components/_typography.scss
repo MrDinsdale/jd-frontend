@@ -30,28 +30,6 @@ hr {
   width: 4em;
 }
 
-[class*="title-block"] {
-  display: block;
-  font-family: $font-headline;
-  line-height: 1.1em;
-  text-transform: uppercase;
-}
-
-.title-block {
-  &--sub {
-    font-size: 2em;
-  }
-
-  &--main {
-    margin-bottom: .5em;
-
-    span {
-      display: block;
-      font-size: 1.2em;
-    }
-  }
-}
-
 // text color
 .tc-- {
   &orange {

@@ -14,7 +14,7 @@
   },
   "repository": "",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": "5.1.0"
   },
   "author": "",
   "license": "MIT",
@@ -28,6 +28,7 @@
     "ember-cli-emblem": "0.3.1",
     "ember-cli-htmlbars": "^1.0.3",
     "ember-cli-htmlbars-inline-precompile": "^0.3.1",
+    "ember-cli-import": "0.0.6",
     "ember-cli-inject-live-reload": "^1.4.0",
     "ember-cli-moment-shim": "1.1.0",
     "ember-cli-qunit": "^1.4.0",

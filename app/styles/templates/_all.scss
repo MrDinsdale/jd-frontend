@@ -1,5 +1,6 @@
 // Templates are for indiviual page/template styling
 
-@import "ui/all";
-@import "application";
-@import "index";
+@import 'ui/all',
+        'application',
+        'index',
+        'tile/all';

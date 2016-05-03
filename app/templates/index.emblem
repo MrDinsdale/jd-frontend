@@ -1,23 +1,22 @@
-= ui.site-header-static pageScrolled=pageScrolled
+= ui.site-hero-static pageScrolled=pageScrolled
 
 .page--index
-/ .cactus__w--wide
-/   .cactus__g
-/     .cactus__u--1-2.cactus__u--m-1
-/       span.title-block--sub Hey, my name is Joe
-/       h1.title-block--main
-/         | I make delicious
-/         span  websites
+  .cactus__w--wide.intro-block
+    .cactus__g--gutter-none
+      .cactus__u--1-2.cactus__u--m-1
+        .intro-heading__wrapper
+          span.intro-heading__line--1 Hey, my name is Joe
+          h1.intro-heading__line--2
+            | I make delicious
+            span.intro-heading__line--3  websites
 
-/   .cactus__g
-/     .cactus__u--1-2.cactus__u--m-1
-/       p.index-block__intro
-/         strong I love all things web. I especially love working on DRY, scalable projects using <em>Ember CLI</em>, <em>Sass</em> and <em>CoffeeScript</em>.
-/       p I've worked on a variety of projects for clients such as <em>EE</em>, <em>Microsoft</em> and <em>BBC</em>.
-/       p When I'm not working on design or web development I enjoy watching films, playing bass and drinking coffee.
-
-
-
+    .cactus__g--gutter-none.u-group-reverse
+      .cactus__u--1-2.cactus__u--m-1
+        .intro-copy__wrapper
+          p.intro-copy__main I love all things web. I especially love working on DRY, scalable projects using all sorts of cool stuff.
+          p I’m a frontend developer working at Sky in Leeds working on a range of projects across a variety of teams where I focus on using <em>HTML</em>, <em>CSS</em> and <em>React</em>.
+          p Previously I have worked on projects for big brands such as <em>MixRadio</em>, <em>Microsoft</em>, <em>EE</em> and <em>Karhoo</em>.
+          p When I'm not working on design or web development I enjoy watching films, playing bass and drinking coffee.
 
 / .cactus__g--gutter-none
 /   .cactus__u--1-2.cactus__u--m-1

@@ -11,24 +11,35 @@
 ==================================================================
 */
 
-// @import "fonts";
 
-// Import Framework settings
-@import "settings";
-
+// VENDOR
+// =====================================
 // 3rd Party Styles
 @import 'vendor/all';
 
-// Cactus Framework
-@import 'common/all';
-@import 'framework/all';
 
-// Import Components
+// CACTUS
+// =====================================
+// Cactus Framework Settings
+@import 'cactus-config';
+
+// Cactus Framework Library
+@import 'Cactus/application';
+
+
+// SITE STYLING
+// =====================================
+// Framework settings
+@import "settings";
+
+// Components
 @import "components/all";
-// Import Modules
-@import "modules/all";
-// Import Site Templates
+
+// Site Templates
 @import "templates/all";
 
+
+// MISC
+// =====================================
 // For temp "dirty" fixes...
 @import "shame";

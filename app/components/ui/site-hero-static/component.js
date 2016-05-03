@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  classNames: ['site-header-static'],
+  classNames: ['site-hero-static'],
   playAnimation: false,
   timeline: [],
 
@@ -10,8 +10,7 @@ export default Ember.Component.extend({
         context = this.get('element'),
         title = Ember.$(context).find('.jd-block__title'),
         subtitle = Ember.$(context).find('.jd-block__subtitle'),
-        hr = Ember.$(context).find('.jd-block__rule'),
-        border = Ember.$(context).find('.site-header-static__border');
+        hr = Ember.$(context).find('.jd-block__rule');
 
     this.timeline = new TimelineLite({
       onComplete: function() {
@@ -33,10 +32,5 @@ export default Ember.Component.extend({
       width: 0,
       ease: Power2.easeInOut
     }), 1);
-
-    this.timeline.add(TweenMax.from(border, 2, {
-      maxHeight: '0',
-      ease: Power2.easeOut
-    }), 0.25);
   }).on('didInsertElement')
 });

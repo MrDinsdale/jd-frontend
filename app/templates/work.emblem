@@ -1,1 +1,10 @@
-= outlet
+/ = outlet
+.cactus__g--gutter-none
+  .cactus__u--1-2.cactus__u--m-1
+    = tile.post-tile featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-22--working-with-ember-components/featured.jpg' title='Working with Ember Components'
+  .cactus__u--1-2.cactus__u--m-1
+    = tile.post-tile featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-25--jumping-into-bem/featured.jpg' title='Jumping into BEM'
+  .cactus__u--1-2.cactus__u--m-1
+    = tile.post-tile featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-25--jumping-into-bem/featured.jpg' title='Jumping into BEM'
+  .cactus__u--1-2.cactus__u--m-1
+    = tile.post-tile featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-22--working-with-ember-components/featured.jpg' title='Working with Ember Components'

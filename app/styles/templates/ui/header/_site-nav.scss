@@ -7,7 +7,6 @@
 }
 
 [class*=site-navigation__half] {
-  @extend %vertical-align-parent;
   background-color: $grey-dark;
   height: 100vh;
   position: absolute;
@@ -35,7 +34,6 @@
 }
 
 .navigation-item {
-  @extend %vertical-align;
   background-color: $white;
   display: inline-block;
   height: 16em;
