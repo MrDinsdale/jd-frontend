@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   tagName: 'nav',
-  classNames: ['site-navigation'],
+  classNames: ['site-nav'],
   classNameBindings: ['navState:clicked:unclicked'],
   timeline: [],
 
@@ -23,16 +23,21 @@ export default Ember.Component.extend({
 
   navAnimation: (function() {
     this.timeline = new TimelineLite({ paused: true });
+    const _this = this;
+    const navLinks = Ember.$('.site-nav').find('.site-nav__link');
 
-    this.timeline.append(TweenMax.to( Ember.$('#nav-left'), 0.3, {
-      left: "0vw",
-      ease: Power2.easeInOut
-    }), 0);
 
-    this.timeline.append(TweenMax.to( Ember.$('#nav-right'), 0.3, {
-      right: "0vw",
-      ease: Power2.easeInOut
-    }), -0.3);
+    navLinks.each(function(index) {
+      let offset = 0;
+      if (index > 0) {
+        offset = -0.5;
+      }
+
+      _this.timeline.append(TweenLite.to(Ember.$(this), 0.6, {
+        height: '100vh',
+        ease: Power2.easeOut
+      }), offset);
+    });
   }).on('didInsertElement'),
 
   navStateChanged: (function() {

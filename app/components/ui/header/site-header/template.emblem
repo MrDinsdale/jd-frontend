@@ -1,6 +1,6 @@
-.site-header__logo
-  = brand.logo-small-light play=playAnimation
-
 = ui.header.site-nav navState=navState
+
+= link-to 'index' class='site-header__logo'
+  = brand.logo-small-light play=playAnimation
 
 = ui.header.site-nav-toggle navState=navState

@@ -1,10 +1,9 @@
 / = outlet
-.cactus__g--gutter-none
-  .cactus__u--1-2.cactus__u--m-1
-    = tile.post-tile featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-22--working-with-ember-components/featured.jpg' title='Working with Ember Components'
-  .cactus__u--1-2.cactus__u--m-1
-    = tile.post-tile featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-25--jumping-into-bem/featured.jpg' title='Jumping into BEM'
-  .cactus__u--1-2.cactus__u--m-1
-    = tile.post-tile featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-25--jumping-into-bem/featured.jpg' title='Jumping into BEM'
-  .cactus__u--1-2.cactus__u--m-1
-    = tile.post-tile featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-22--working-with-ember-components/featured.jpg' title='Working with Ember Components'
+.post-list
+  .cactus__g--gutter-none
+    .cactus__u--1-2.cactus__u--m-1
+      = tile.post-tile featuredImage='http://www.jakewalters.com/jwadmin/uploads/2014_09_25_19_26_50.jpg' title='Jake Walters' tagline='High profile photographer (Coming soon)'
+    .cactus__u--1-2.cactus__u--m-1
+      = tile.post-tile featuredImage='http://edenfilms.com/assets/images/bg-home-tracker.jpg' title='Eden Films' tagline='London based film production (Coming soon)'
+    .cactus__u--1-2.cactus__u--m-1
+      = tile.post-tile featuredImage='http://thomasstubbs.com/content/uploads/2015/11/DSC9278.jpg' title='Thomas Stubbs' tagline='Menswear Stylist & Writer (Coming soon)'

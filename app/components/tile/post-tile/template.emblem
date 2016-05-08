@@ -1,4 +1,6 @@
-.post-tile__inner style="background-image: url({{featuredImage}});"
-  / span.post-tile__date = moment-from-now publishedAt
-  h3.post-tile__title = title
-  / span.post-tile__tagline = tag
+.post-tile__wrapper style="background-image: url({{featuredImage}});"
+  .post-tile__inner.u-vertical-align__child
+    if publishedAt
+      span.post-tile__date = publishedAt
+    h3.post-tile__title = title
+    span.post-tile__tagline = tagline

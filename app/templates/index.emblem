@@ -13,14 +13,14 @@
     .cactus__g--gutter-none.u-group-reverse
       .cactus__u--1-2.cactus__u--m-1
         .intro-copy__wrapper
-          p.intro-copy__main I love all things web. I especially love working on DRY, scalable projects using all sorts of cool stuff.
+          p.intro-copy__main I love all things web. I especially love working on DRY, scalable projects utilising the latest technologies.
           p I’m a frontend developer working at Sky in Leeds working on a range of projects across a variety of teams where I focus on using <em>HTML</em>, <em>CSS</em> and <em>React</em>.
           p Previously I have worked on projects for big brands such as <em>MixRadio</em>, <em>Microsoft</em>, <em>EE</em> and <em>Karhoo</em>.
           p When I'm not working on design or web development I enjoy watching films, playing bass and drinking coffee.
 
-/ .cactus__g--gutter-none
-/   .cactus__u--1-2.cactus__u--m-1
-/     = tile.post-tile featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-22--working-with-ember-components/featured.jpg' title='Working with Ember Components'
-
-/   .cactus__u--1-2.cactus__u--m-1
-/     = tile.post-tile featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-25--jumping-into-bem/featured.jpg' title='Jumping into BEM'
+.post-list
+  .cactus__g--gutter-none
+    .cactus__u--1-2.cactus__u--m-1
+      = tile.post-tile featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-22--working-with-ember-components/featured.jpg' publishedAt='2 days ago' title='Working with Ember Components' tagline='A quick look at utilising components'
+    .cactus__u--1-2.cactus__u--m-1
+      = tile.post-tile featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-25--jumping-into-bem/featured.jpg' publishedAt='7 days ago' title='Jumping into BEM' tagline='Bringing structure to CSS classes using BEM'

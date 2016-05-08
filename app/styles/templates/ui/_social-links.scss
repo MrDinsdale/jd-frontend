@@ -1,4 +1,4 @@
-ul.social-links {
+.social-links {
   display: block;
   margin: 0 auto;
   padding: .5em .5em;
@@ -11,36 +11,37 @@ ul.social-links {
     margin: 0;
     padding: .25em;
     width: 3em;
+  }
 
-    a {
-      display: inline-block;
-      padding: 0em;
-      position: relative;
+  a {
+    display: inline-block;
+    padding: 0em;
+    position: relative;
 
-      &::before {
-        background: rgba($orange,0);
-        border-radius: 3em;
-        bottom: .5em;
-        content: '';
-        display: block;
-        left: .5em;
-        position: absolute;
-        right: .5em;
-        top: .5em;
-        transition: .25s;
-      }
+    &::before {
+      background: rgba($orange,0);
+      bottom: .5em;
+      content: '';
+      display: block;
+      left: .5em;
+      position: absolute;
+      right: .5em;
+      top: .5em;
+      transform: rotate(45deg);
+      transform-origin: 50%;
+      transition: .25s;
+    }
 
-      &:hover::before {
-        background: $cream;
-        bottom: -.25em;
-        left: -.25em;
-        right: -.25em;
-        top: -.25em;
-      }
+    &:hover::before {
+      background: $cream;
+      bottom: -.25em;
+      left: -.25em;
+      right: -.25em;
+      top: -.25em;
+    }
 
-      .ua-ie & {
-        display: block;
-      }
+    .ua-ie & {
+      display: block;
     }
   }
 
@@ -49,9 +50,9 @@ ul.social-links {
     height: auto;
     width: 100%;
     position: relative;
+  }
 
-    .social-icon {
-      fill: $grey-dark;
-    }
+  .social-icon {
+    fill: $grey-dark;
   }
 }

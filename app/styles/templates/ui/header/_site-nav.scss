@@ -1,85 +1,73 @@
-.site-navigation {
+.site-nav {
+  bottom: 0;
   left: 0;
+  pointer-events: none;
   position: fixed;
+  right: 0;
   top: 0;
-  width: 100%;
-  z-index: -10;
-}
 
-[class*=site-navigation__half] {
-  background-color: $grey-dark;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  width: 50vw;
-}
-.site-navigation__half {
-  &--left {
-    left: -51vw;
-    text-align: right;
-
-    .navigation-item, {
-      border-radius: 8em 0 0 8em;
-    }
-  }
-
-  &--right {
-    right: -51vw;
-    text-align: left;
-
-    .navigation-item, {
-      border-radius: 0 8em 8em 0;
-    }
-  }
-}
-
-.navigation-item {
-  background-color: $white;
-  display: inline-block;
-  height: 16em;
-  overflow: hidden;
-  padding: 0 2em;
-  position: relative;
-  width: 8em;
-
-  &::before {
-    background: $orange;
-    bottom: 0;
-    content: '';
+  &__link {
+    background: $grey-dark url('/images/ui/bg-diag-grey.png') top left fixed;
+    background-size: 6px;
     display: block;
+    height: 0;
+    list-style: none;
+    pointer-events: fill;
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    transition: background-color .8s;
+    width: 33.33333333%;
+
+    &--index {
+      bottom: 0;
+
+      .site-nav__title {
+        bottom: 50vh;
+        margin-bottom: -1em;
+      }
+    }
+
+    &--work {
+      left: 33.33333333%;
+      top: 0;
+
+      .site-nav__title {
+        top: 50vh;
+        margin-top: -1em;
+      }
+    }
+
+    &--blog {
+      bottom: 0;
+      left: 66.66666666%;
+
+      .site-nav__title {
+        bottom: 50vh;
+        margin-bottom: -1em;
+      }
+    }
+
+    &.active {
+      background-color: $black;
+    }
+
+    &:hover {
+      background-color: $orange;
+    }
+  }
+
+  &__title {
+    color: $white;
+    font-size: 3em;
+    font-family: $font-headline;
     left: 0;
+    line-height: 2em;
     position: absolute;
     right: 0;
-    top: 100%;
-    transition: .25s;
-  }
-
-  &:hover::before {
-    top: 0;
-  }
-}
-
-.navigation-item__title {
-  @extend %vertical-align;
-  color: $grey-dark;
-  display: inline-block;
-  font-family: $font-headline;
-  font-size: 2em;
-  height: 1.5em;
-  position: relative;
-
-  .navigation-item &:after {
-    background: rgba($orange, 0);
-    content: '';
-    display: block;
-    height: .0625em;
-    position: absolute;
-    top: 85%;
-    transition: .2s;
-    width: .75em;
-  }
-
-  .navigation-item.active &:after {
-    background: rgba($orange, 1);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
   }
 }
