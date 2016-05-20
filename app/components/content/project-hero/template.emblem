@@ -1,0 +1,4 @@
+.project-hero__wrapper style="background-image: url({{featuredImage}});"
+  .project-hero__inner.u-vertical-align__child
+    h1.project-hero__title = title
+    span.project-hero__tagline = tagline

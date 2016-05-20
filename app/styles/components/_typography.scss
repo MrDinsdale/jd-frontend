@@ -11,7 +11,13 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-  font-size: .875em;
+  color: $grey-mid;
+  font-size: 1.125em;
+}
+
+a {
+  color: $orange;
+  text-decoration: none;
 }
 
 strong {

@@ -1,9 +1,9 @@
 = link-to 'index' class='site-nav__link site-nav__link--index'
     span.site-nav__title home
 
-= link-to 'work' class='site-nav__link site-nav__link--work'
+= link-to 'projects' class='site-nav__link site-nav__link--work'
   span.site-nav__title work
 
 
-= link-to 'blog' class='site-nav__link site-nav__link--blog'
+= link-to 'posts' class='site-nav__link site-nav__link--blog'
     span.site-nav__title blog

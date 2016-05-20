@@ -8,6 +8,7 @@
     "expectElement",
     "expectNoElement",
     "TimelineLite",
+    "TweenLite",
     "TweenMax",
     "Power2"
   ],

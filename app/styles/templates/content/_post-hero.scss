@@ -1,0 +1,22 @@
+.post-hero {
+  &__wrapper {
+    background-position: center;
+    background-size: cover;
+    color: $cream;
+    height: 50vh;
+    position: relative;
+    text-align: center;
+
+    &::before {
+      background: rgba($grey-dark, .75) url('/images/ui/bg-diag-grey.png') top left;
+      background-size: 6px;
+      bottom: 0;
+      content: '';
+      display: block;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}

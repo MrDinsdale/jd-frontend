@@ -1,0 +1,2 @@
+.post-hero__wrapper style="background-image: url({{featuredImage}});"
+  .post-hero__inner.u-vertical-align__child

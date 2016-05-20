@@ -48,12 +48,13 @@
       }
     }
 
-    &.active {
-      background-color: $black;
-    }
-
     &:hover {
       background-color: $orange;
+    }
+
+    &.active {
+      background-color: $black;
+      cursor: default;
     }
   }
 

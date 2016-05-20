@@ -11,7 +11,7 @@
     text-transform: uppercase;
 
     &::before {
-      background: rgba($grey-dark, .75) url('/images/ui/bg-diag-grey.png') top left fixed;
+      background: rgba($grey-dark, .75) url('/images/ui/bg-diag-grey.png') top left;
       background-size: 6px;
       border: .125em solid $grey-dark;
       bottom: 0;

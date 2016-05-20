@@ -6,8 +6,15 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('blog');
-  this.route('work');
+  this.route('posts', function() {
+    this.route('index');
+    this.route('show');
+  });
+
+  this.route('projects', function() {
+    this.route('index');
+    this.route('show');
+  });
 });
 
 export default Router;
