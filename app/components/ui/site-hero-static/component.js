@@ -32,5 +32,12 @@ export default Ember.Component.extend({
       width: 0,
       ease: Power2.easeInOut
     }), 1);
-  }).on('didInsertElement')
+  }).on('didInsertElement'),
+
+  willDestroy: function() {
+    this.timeline.clear();
+    this.timeline.stop();
+    Ember.$(window).off('resize');
+    Ember.$(window).off('scroll');
+  },
 });
