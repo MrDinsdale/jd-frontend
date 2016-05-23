@@ -9,6 +9,11 @@
     @media(max-width: $break-l) {
       font-size: 1.4vw;
     }
+
+    @media(max-width: $break-m) {
+      font-size: 2.4vw;
+      text-align: center;
+    }
   }
 
   &__line--1,
@@ -35,12 +40,17 @@
 }
 
 .intro-copy {
-  &__wrapper {
-    // max-width: 28em;
-  }
-
   &__main {
     font-size: 1.25em;
     font-weight: 800;
+  }
+
+  &__wrapper {
+    @media(max-width: $break-m) {
+      margin: 0 auto;
+      max-width: 30em;
+      padding-top: 6em;
+      text-align: center;
+    }
   }
 }
