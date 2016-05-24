@@ -4,6 +4,5 @@
 = link-to 'projects' class='site-nav__link site-nav__link--work'
   span.site-nav__title work
 
-
 = link-to 'posts' class='site-nav__link site-nav__link--blog'
     span.site-nav__title blog
