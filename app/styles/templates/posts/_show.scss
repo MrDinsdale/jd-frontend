@@ -4,23 +4,12 @@
 }
 
 .post-body {
-  // background-color: $white;
-  padding: 4em 0 8em;
+  background-color: $cream;
+  margin: -25vh -4em 0;
+  padding: 2em 4em 4em;
   position: relative;
 }
 
 .post-header {
   text-align: right;
-
-  &__title {
-    font-size: 4em;
-    margin-bottom: 0;
-  }
-
-  &__tagline {
-    display: block;
-    font-size: 1.25em;
-    letter-spacing: .05em;
-    text-transform: uppercase;
-  }
 }

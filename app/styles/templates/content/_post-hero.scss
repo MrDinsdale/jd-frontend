@@ -3,7 +3,7 @@
     background-position: center;
     background-size: cover;
     color: $cream;
-    height: 50vh;
+    height: 75vh;
     position: relative;
     text-align: center;
 
@@ -18,5 +18,25 @@
       right: 0;
       top: 0;
     }
+  }
+
+  &__inner {
+    bottom: 25vh;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: left;
+  }
+
+  &__title {
+    font-size: 4em;
+    margin-bottom: 0;
+  }
+
+  &__tagline {
+    display: block;
+    font-size: 1.25em;
+    letter-spacing: .05em;
+    text-transform: uppercase;
   }
 }

@@ -1,13 +1,9 @@
-= content.post-hero featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-22--working-with-ember-components/featured.jpg'
+= content.post-hero featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-22--working-with-ember-components/featured.jpg' title="Working with Ember Components" tagline="Something about stuff etc (Coming soon)"
 
-.post-body
-  .cactus__w--wide
-    .cactus__g
-      .cactus__u--1-2
-        .post-header
-          h1.post-header__title Working with Ember Components
-          h2.post-header__tagline Something about stuff etc (Coming soon)
-      .cactus__u--1-2
+.cactus__w
+  .cactus__g
+    .cactus__u--1
+      .post-body
         h3 The move to Components
 
         p Ember recently deprecated the use of Views in favour of using Components. This means that the Model-View-Controller approach we have seen in the past has been replaced with Model-Route-Component-Service following a DDAU methodology (data down, actions up). For more information of the reasoning behind these transitions I recommend taking a look at <a href="http://emberjs.com/blog/">the EmberJS blog</a>.

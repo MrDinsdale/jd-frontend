@@ -1,2 +1,7 @@
 .post-hero__wrapper style="background-image: url({{featuredImage}});"
-  .post-hero__inner.u-vertical-align__child
+  .post-hero__inner
+    .cactus__w
+      .cactus__g
+        .cactus__u--1
+          h1.post-hero__title Working with Ember Components
+          h2.post-hero__tagline Something about stuff etc (Coming soon)
