@@ -1,10 +1,6 @@
 .post-list
   .cactus__g--gutter-none
-    .cactus__u--1-2.cactus__u--m-1
-      = tile.post-tile featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-22--working-with-ember-components/featured.jpg' publishedAt='2 days ago' title='Working with Ember Components' tagline='A quick look at utilising components' target='posts.show'
-    .cactus__u--1-2.cactus__u--m-1
-      = tile.post-tile featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-25--jumping-into-bem/featured.jpg' publishedAt='7 days ago' title='Jumping into BEM' tagline='Bringing structure to CSS classes using BEM' target='posts.show'
-    .cactus__u--1-2.cactus__u--m-1
-      = tile.post-tile featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-25--jumping-into-bem/featured.jpg' publishedAt='2 weeks ago' title='2 years of Agile' tagline='My personal experience of using agile methedologies' target='posts.show'
-    .cactus__u--1-2.cactus__u--m-1
-      = tile.post-tile featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-22--working-with-ember-components/featured.jpg' publishedAt='1 month ago' title='Testing Ember' tagline='A quick look at using qUnit to test your Ember app' target='posts.show'
+    each posts as |post|
+      .cactus__u--1-2.cactus__u--m-1
+        = tile.post-tile content=post target='posts.show'
+

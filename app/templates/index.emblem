@@ -18,9 +18,9 @@
           p Previously I have worked on projects for big brands such as <em>MixRadio</em>, <em>Microsoft</em>, <em>EE</em> and <em>Karhoo</em>.
           p When I'm not working on design or web development I enjoy watching films, playing bass and drinking coffee.
 
-.post-list
-  .cactus__g--gutter-none
-    .cactus__u--1-2.cactus__u--m-1
-      = tile.post-tile featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-22--working-with-ember-components/featured.jpg' publishedAt='2 days ago' title='Working with Ember Components' tagline='A quick look at utilising components'
-    .cactus__u--1-2.cactus__u--m-1
-      = tile.post-tile featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-25--jumping-into-bem/featured.jpg' publishedAt='7 days ago' title='Jumping into BEM' tagline='Bringing structure to CSS classes using BEM'
+/ .post-list
+/   .cactus__g--gutter-none
+/     .cactus__u--1-2.cactus__u--m-1
+/       = tile.post-tile featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-22--working-with-ember-components/featured.jpg' publishedAt='2 days ago' title='Working with Ember Components' tagline='A quick look at utilising components'
+/     .cactus__u--1-2.cactus__u--m-1
+/       = tile.post-tile featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-25--jumping-into-bem/featured.jpg' publishedAt='7 days ago' title='Jumping into BEM' tagline='Bringing structure to CSS classes using BEM'

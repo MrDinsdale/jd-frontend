@@ -18,16 +18,16 @@ export default Ember.Controller.extend({
     Ember.run.debounce(this, this.setScrolledClass, 100);
   },
 
-  setScrolledClass: function() {
+  setScrolledClass: Ember.observer('currentPath', function() {
     if (Ember.$(window).scrollTop() >= 50) {
       this.set('pageScrolled', 1);
     } else {
       this.set('pageScrolled', 0);
     }
-  },
+  }),
 
   routeChange: Ember.observer('currentPath', function() {
     this.set('navState', 0);
-    Ember.$('html, body').animate({scrollTop: 0}, '100');
+    Ember.$('html, body').animate({scrollTop: 0}, '20');
   })
 });

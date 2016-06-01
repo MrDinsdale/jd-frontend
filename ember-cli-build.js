@@ -9,7 +9,6 @@ module.exports = function(defaults) {
     }
   });
 
-  app.import('./bower_components/FitText.js/jquery.fittext.js');
   app.import('./bower_components/gsap/src/uncompressed/jquery.gsap.js');
   app.import('./bower_components/gsap/src/uncompressed/TweenMax.js');
   app.import('./bower_components/gsap/src/uncompressed/TimelineLite.js');

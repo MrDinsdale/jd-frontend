@@ -23,6 +23,7 @@
   &__inner {
     bottom: 25vh;
     left: 0;
+    padding-bottom: 2em;
     position: absolute;
     right: 0;
     text-align: left;
@@ -34,6 +35,7 @@
   }
 
   &__tagline {
+    color: $orange;
     display: block;
     font-size: 1.25em;
     letter-spacing: .05em;

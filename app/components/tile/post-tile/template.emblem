@@ -1,7 +1,6 @@
-= link-to target
-  .post-tile__wrapper style="background-image: url({{featuredImage}});"
+= link-to 'posts.show' content.slug
+  .post-tile__wrapper style="background-image: url(http://joedinsdale.co.uk/images/posts/2015-10-22--working-with-ember-components/featured.jpg);"
     .post-tile__inner.u-vertical-align__child
-      if publishedAt
-        span.post-tile__date = publishedAt
-      h3.post-tile__title = title
-      span.post-tile__tagline = tagline
+      span.post-tile__date 2 days ago
+      h3.post-tile__title = content.title
+      span.post-tile__tagline = content.excerpt
