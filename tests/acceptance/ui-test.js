@@ -11,7 +11,7 @@ test('User can navigate to posts via the main nav', function(assert) {
 
     andThen(function() {
       assert.equal(this.$('.nav-button__toggle').hasClass('clicked'), true, 'Nav button has clicked state');
-      assert.equal(this.$('.site-header').hasClass('nav-open'), true, 'Nav is set to open');
+      assert.equal(this.$('.site-nav').hasClass('opened'), true, 'Nav is set to open');
 
       click('.site-nav__link--blog');
 

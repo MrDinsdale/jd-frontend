@@ -30,5 +30,10 @@ export default Ember.Component.extend({
     } else {
       this.timeline.reverse();
     }
-  }).observes('play')
+  }).observes('play'),
+
+  willDestroy: function() {
+    this.timeline.clear();
+    this.timeline.stop();
+  }
 });

@@ -37,7 +37,5 @@ export default Ember.Component.extend({
   willDestroy: function() {
     this.timeline.clear();
     this.timeline.stop();
-    Ember.$(window).off('resize');
-    Ember.$(window).off('scroll');
-  },
+  }
 });

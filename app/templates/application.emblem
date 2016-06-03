@@ -1,6 +1,6 @@
-= ui.header.site-header pageScrolled=pageScrolled navState=navState
+= ui.header.site-header
 
-.site-container class=pageScrolled:scrolled:notScrolled
+.site-container
   = outlet
 
 = ui.site-footer
