@@ -7,6 +7,8 @@
 
   .nav-button__toggle,
   &__logo {
+    z-index: 200;
+
     &::before {
       background-color: $grey-dark;
       bottom: 0;
@@ -38,7 +40,7 @@
     }
   }
 
-  &.page-scrolled {
+  &.page-scrolled, &.nav-open {
     .nav-button__toggle,
     .site-header__logo {
       &::before {

@@ -2,14 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   navigation: Ember.inject.service(),
+  navState: Ember.computed.alias('navigation.navState'),
   tagName: 'nav',
   classNames: ['site-nav'],
-  classNameBindings: ['navigation.navState:opened:closed'],
+  classNameBindings: ['navState:opened:closed'],
   timeline: [],
-
-  didInsertElement: function() {
-    this.get('navigation.navState');
-  },
 
   navStateMap: {
     0: 'navCloseAnimation',
@@ -42,6 +39,6 @@ export default Ember.Component.extend({
   }).on('didInsertElement'),
 
   navStateChanged: (function() {
-    return this[this.get('navStateMap')[this.get('navigation.navState')]]();
-  }).observes('navigation.navState')
+    return this[this.get('navStateMap')[this.get('navState')]]();
+  }).observes('navState')
 });
