@@ -7,7 +7,6 @@ export default function wipe() {
       'overflow': 'hidden',
       'minHeight': '100vh',
       'height': '100vh',
-      // 'boxShadow': '0 0 1em rgba(0,0,0,0.25)',
       'backgroundColor': '#ffffff',
       'zIndex': 1000
     });
