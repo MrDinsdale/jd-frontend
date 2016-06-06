@@ -1,5 +1,5 @@
 = link-to 'posts.show' content.slug
-  .post-tile__wrapper style="background-image: url(http://joedinsdale.co.uk/images/posts/2015-10-22--working-with-ember-components/featured.jpg);"
+  .post-tile__wrapper
     .post-tile__inner.u-vertical-align__child
       span.post-tile__date 2 days ago
       h3.post-tile__title = content.title
