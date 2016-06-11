@@ -2,3 +2,14 @@
   background-color: $grey-dark;
   border: .125em solid $grey-dark;
 }
+
+.project-body {
+  background-color: $cream;
+  margin: 0;
+  padding: 4em 0;
+  position: relative;
+}
+
+.project-header {
+  text-align: right;
+}

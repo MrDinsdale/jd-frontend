@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   classNames: ['brand__logo-small'],
   timeline: [],
 
-  setupTimeline: (function() {
+  initTimeline: (function() {
     let context = this.get('element'),
         logoJ = Ember.$(context).find('.jd-logo__j'),
         logoD = Ember.$(context).find('.jd-logo__d');
@@ -13,12 +13,12 @@ export default Ember.Component.extend({
       paused: true
     });
 
-    this.timeline.add(TweenMax.to(logoJ, 1, {
+    this.timeline.add(TweenLite.to(logoJ, 1, {
       strokeDashoffset: 0,
       ease: Power2.easeInOut
     }), 0);
 
-    this.timeline.add(TweenMax.to(logoD, 1, {
+    this.timeline.add(TweenLite.to(logoD, 1, {
       strokeDashoffset: 0,
       ease: Power2.easeInOut
     }), 0.1);
@@ -30,5 +30,10 @@ export default Ember.Component.extend({
     } else {
       this.timeline.reverse();
     }
-  }).observes('play')
+  }).observes('play'),
+
+  willDestroy: function() {
+    this.timeline.clear();
+    this.timeline.stop();
+  }
 });

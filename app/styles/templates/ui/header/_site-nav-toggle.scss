@@ -13,8 +13,7 @@
 }
 
 .nav-button__line {
-  background-color: $white;
-  border-radius: 1em;
+  background-color: $cream;
   display: block;
   height: 2px;
   left: 1.625em;
@@ -48,7 +47,7 @@
     transition: .2s;
   }
 
-  .nav-open & {
+  .clicked & {
     background-color: $orange;
     top: 2.375em;
     -webkit-transform: rotate(45deg);
@@ -66,7 +65,7 @@
     transition: .2s .1s;
   }
 
-  .nav-open & {
+  .clicked & {
     background-color: $orange;
     opacity: 0;
   }
@@ -79,7 +78,7 @@
     transition: .2s .2s;
   }
 
-  .nav-open & {
+  .clicked & {
     background-color: $orange;
     top: 2.375em;
     -webkit-transform: rotate(-45deg);

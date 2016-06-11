@@ -1,6 +1,10 @@
-= ui.header.site-header pageScrolled=pageScrolled navState=navState
+= ui.header.site-header
 
-.site-container class=pageScrolled:scrolled:notScrolled
-  = outlet
+.site-container
+  .page-wipe__wrapper
+    .page-wipe__block.page-wipe__block--1
+    .page-wipe__block.page-wipe__block--2
+    .page-wipe__block.page-wipe__block--3
+  = liquid-outlet class="outlet--main"
 
 = ui.site-footer

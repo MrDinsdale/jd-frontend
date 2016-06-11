@@ -1,33 +1,38 @@
 import Ember from "ember";
 
 export default Ember.Controller.extend({
-  navState: 0,
+  navigation: Ember.inject.service(),
+  page: Ember.inject.service(),
+  backTarget: Ember.computed.alias('navigation.backTarget'),
 
-  init: function() {
-    let _this = this;
-
-    this.set('navState', 0);
-    this.setScrolledClass();
-
-    Ember.$(window).scroll(function() {
-      _this.onScroll();
-    });
+  resetNavState: function() {
+    this.set('navigation.navState', 0);
   },
 
-  onScroll: function() {
-    Ember.run.debounce(this, this.setScrolledClass, 100);
+  updateCurrentPath: function() {
+    this.set('page.currentPath', this.get('currentPath'));
   },
 
-  setScrolledClass: Ember.observer('currentPath', function() {
-    if (Ember.$(window).scrollTop() >= 50) {
-      this.set('pageScrolled', 1);
+  updateBackTarget: function() {
+    let currentPath = this.get('currentPath');
+
+    if (currentPath === "posts.show") {
+      this.get('navigation').updateBackTarget('posts');
+    } else if (currentPath === "projects.show") {
+      this.get('navigation').updateBackTarget('projects');
     } else {
-      this.set('pageScrolled', 0);
+      this.get('navigation').updateBackTarget(false);
     }
-  }),
+  },
+
+  scrollToTop: function() {
+    Ember.$('html, body').animate({scrollTop: 0}, 0);
+  },
 
   routeChange: Ember.observer('currentPath', function() {
-    this.set('navState', 0);
-    Ember.$('html, body').animate({scrollTop: 0}, '20');
+    this.resetNavState();
+    this.updateCurrentPath();
+    this.updateBackTarget();
+    this.scrollToTop();
   })
 });

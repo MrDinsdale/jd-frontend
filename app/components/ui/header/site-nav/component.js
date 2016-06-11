@@ -1,9 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  navigation: Ember.inject.service(),
+  navState: Ember.computed.alias('navigation.navState'),
   tagName: 'nav',
   classNames: ['site-nav'],
-  classNameBindings: ['navState:clicked:unclicked'],
+  classNameBindings: ['navState:opened:closed'],
   timeline: [],
 
   navStateMap: {
@@ -12,12 +14,10 @@ export default Ember.Component.extend({
   },
 
   navCloseAnimation: function() {
-    Ember.$('.nav-button__toggle').removeClass("clicked");
     this.timeline.reverse();
   },
 
   navOpenAnimation: function() {
-    Ember.$('.nav-button__toggle').addClass("clicked");
     this.timeline.play();
   },
 
@@ -26,13 +26,11 @@ export default Ember.Component.extend({
     const _this = this;
     const navLinks = Ember.$('.site-nav').find('.site-nav__link');
 
-
     navLinks.each(function(index) {
       let offset = 0;
       if (index > 0) {
         offset = -0.5;
       }
-
       _this.timeline.append(TweenLite.to(Ember.$(this), 0.6, {
         height: '100vh',
         ease: Power2.easeOut

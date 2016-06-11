@@ -11,7 +11,7 @@ Router.map(function() {
   });
 
   this.route('projects', function() {
-    this.route('show');
+    this.route('show', { path: '/:project_slug'});
   });
 });
 

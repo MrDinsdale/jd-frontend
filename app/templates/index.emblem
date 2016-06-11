@@ -14,13 +14,12 @@
       .cactus__u--1-2.cactus__u--m-1
         .intro-copy__wrapper
           p.intro-copy__main I love all things web. I especially love working on DRY, scalable projects utilising the latest technologies.
-          p I’m a frontend developer working at Sky in Leeds working on a range of projects across a variety of teams where I focus on using <em>HTML</em>, <em>CSS</em> and <em>React</em>.
+          p I’m a frontend developer working at Sky in Leeds working primarily with <em>HTML</em>, <em>CSS</em> and <em>React</em> to build scalable fronend applications and components.
           p Previously I have worked on projects for big brands such as <em>MixRadio</em>, <em>Microsoft</em>, <em>EE</em> and <em>Karhoo</em>.
           p When I'm not working on design or web development I enjoy watching films, playing bass and drinking coffee.
 
 / .post-list
 /   .cactus__g--gutter-none
-/     .cactus__u--1-2.cactus__u--m-1
-/       = tile.post-tile featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-22--working-with-ember-components/featured.jpg' publishedAt='2 days ago' title='Working with Ember Components' tagline='A quick look at utilising components'
-/     .cactus__u--1-2.cactus__u--m-1
-/       = tile.post-tile featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-25--jumping-into-bem/featured.jpg' publishedAt='7 days ago' title='Jumping into BEM' tagline='Bringing structure to CSS classes using BEM'
+/     each posts as |post|
+/       .cactus__u--1-2.cactus__u--m-1
+/         = tile.post-tile content=post target='posts.show'

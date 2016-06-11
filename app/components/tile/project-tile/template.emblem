@@ -1,0 +1,5 @@
+= link-to 'projects.show' content.slug
+  .project-tile__wrapper style="background-image: url({{content.featuredImage}});"
+    .project-tile__inner.u-vertical-align__child
+      h3.project-tile__title = content.title
+      span.project-tile__tagline = content.excerpt

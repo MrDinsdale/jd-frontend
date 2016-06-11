@@ -18,17 +18,17 @@ export default Ember.Component.extend({
       }
     });
 
-    this.timeline.add(TweenMax.from(title, 0.75, {
+    this.timeline.add(TweenLite.from(title, 0.75, {
       opacity: 0,
       ease: Power2.easeInOut
     }), 0.5);
 
-    this.timeline.add(TweenMax.from(subtitle, 0.75, {
+    this.timeline.add(TweenLite.from(subtitle, 0.75, {
       opacity: 0,
       ease: Power2.easeInOut
     }), 0.75);
 
-    this.timeline.add(TweenMax.from(hr, 0.75, {
+    this.timeline.add(TweenLite.from(hr, 0.75, {
       width: 0,
       ease: Power2.easeInOut
     }), 1);
@@ -37,7 +37,5 @@ export default Ember.Component.extend({
   willDestroy: function() {
     this.timeline.clear();
     this.timeline.stop();
-    Ember.$(window).off('resize');
-    Ember.$(window).off('scroll');
-  },
+  }
 });

@@ -12,19 +12,19 @@ test('visiting /projects', function(assert) {
   });
 });
 
-test('Clicking Project tile should take user to project show page', function(assert) {
-  visit('/projects');
+// test('Clicking Project tile should take user to project show page', function(assert) {
+//   visit('/projects');
 
-  var targetUrl = null,
-      targetElement = '.project-list .post-tile:first a';
+//   var targetUrl = null,
+//       targetElement = '.project-list .post-tile:first a';
 
-  andThen(function() {
-    targetUrl = $(targetElement).attr('href');
-    click(targetElement);
+//   andThen(function() {
+//     targetUrl = $(targetElement).attr('href');
+//     click(targetElement);
 
-    andThen(function() {
-      assert.equal(currentRouteName(), 'projects.show', 'Current Route should be correct');
-      assert.equal(currentURL(), targetUrl, 'Current URL should be correct');
-    });
-  });
-});
+//     andThen(function() {
+//       assert.equal(currentRouteName(), 'projects.show', 'Current Route should be correct');
+//       assert.equal(currentURL(), targetUrl, 'Current URL should be correct');
+//     });
+//   });
+// });
