@@ -6,7 +6,7 @@ moduleForComponent('tile/post-tile', 'Integration | Component | tile/post tile',
 });
 
 test('it renders', function(assert) {
-  assert.expect(3);
+  assert.expect(2);
 
   const postStub = {
     'title': 'Test title',
@@ -22,6 +22,5 @@ test('it renders', function(assert) {
 
   assert.equal(this.$('.post-tile__title').text(), 'Test title', 'Post tile has correct Title');
   assert.equal(this.$('.post-tile__tagline').text(), 'Test excerpt', 'Post tile has correct Excerpt');
-  assert.equal(this.$('.post-tile__date').text(), '2 days ago', 'Post tile has correct Date');
   // assert.equal(this.$('.post-tile__wrapper').attr('style'), 'background-image: url(test-url.png);', 'Post tile has correct Featured image');
 });

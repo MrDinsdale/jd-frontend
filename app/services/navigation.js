@@ -5,9 +5,14 @@ export default Ember.Service.extend({
 
   init() {
     this.set('navState', 0);
+    this.updateBackTarget(false);
   },
 
   updateNavState(state) {
     this.set('navState', state);
+  },
+
+  updateBackTarget(target) {
+    this.set('backTarget', target);
   }
 });

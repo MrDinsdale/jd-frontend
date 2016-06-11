@@ -1,0 +1,7 @@
+= if backTarget
+  = link-to backTarget class="back-button__link"
+    span.back-button__line.back-button__line--1
+    span.back-button__line.back-button__line--2
+= else
+  span.back-button__line.back-button__line--1
+  span.back-button__line.back-button__line--2

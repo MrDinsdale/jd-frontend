@@ -1,6 +1,6 @@
 = link-to 'posts.show' content.slug
   .post-tile__wrapper
     .post-tile__inner.u-vertical-align__child
-      span.post-tile__date 2 days ago
+      span.post-tile__date = moment-from-now content.created_at
       h3.post-tile__title = content.title
       span.post-tile__tagline = content.excerpt

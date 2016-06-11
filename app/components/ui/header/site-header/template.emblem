@@ -4,3 +4,4 @@
   = brand.logo-small-light play=playAnimation
 
 = ui.header.site-nav-toggle
+= ui.header.back-button
