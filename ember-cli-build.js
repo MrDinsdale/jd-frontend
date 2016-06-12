@@ -11,6 +11,7 @@ module.exports = function(defaults) {
 
   app.import('./bower_components/gsap/src/uncompressed/TweenLite.js');
   app.import('./bower_components/gsap/src/uncompressed/TimelineLite.js');
+  app.import('./bower_components/gsap/src/uncompressed/plugins/CSSPlugin.js');
 
   return app.toTree();
 };
