@@ -1,5 +1,3 @@
-import showdown from 'showdown';
-
 export function initialize() {
   showdown.extension("imageResponsive", function() {
     return [{
