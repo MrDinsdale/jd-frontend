@@ -9,9 +9,9 @@ export default Ember.Controller.extend({
     this.set('navigation.navState', 0);
   },
 
-  updateCurrentPath: function() {
+  updateCurrentPath: Ember.on('didInsertElement', function() {
     this.set('page.currentPath', this.get('currentPath'));
-  },
+  }),
 
   updateBackTarget: function() {
     let currentPath = this.get('currentPath');

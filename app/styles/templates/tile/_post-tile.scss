@@ -1,32 +1,7 @@
 .post-tile {
   &__wrapper {
-    background-size: cover;
-    background-position: center;
-    color: $cream;
-    cursor: pointer;
     height: 50vh;
     text-align: center;
-    font-family: $font-headline;
-    position: relative;
-    text-transform: uppercase;
-
-    &::before {
-      background: rgba($grey-dark, .75) url('/images/ui/bg-diag-grey.png') top left;
-      background-size: 6px;
-      border: .125em solid $grey-dark;
-      bottom: 0;
-      content: '';
-      display: block;
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 0;
-      transition: .8s;
-    }
-
-    &:hover::before {
-      background-color: rgba($orange, .85);
-    }
   }
 
   &__inner {

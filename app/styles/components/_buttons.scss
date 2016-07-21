@@ -1,0 +1,60 @@
+.ui-button {
+  background-color: $white;
+  display: inline-block;
+  padding: 1em 2em;
+}
+.project-link {
+  display: inline-block;
+  position: relative;
+
+  &__link {
+    background-color: $orange;
+    color: $grey-dark;
+    display: inline-block;
+    font-family: $font-headline;
+    padding: 1em 2em;
+    text-align: center;
+    text-transform: uppercase;
+    transform-origin: 0 100%;
+    transition: .3s ease-in-out;
+  }
+
+  &__intro,
+  &__title {
+    font-size: 1.5em;
+  }
+
+  &__intro {
+    color: $white;
+    font-weight: 600;
+    padding-right: .25em;
+  }
+
+  &__title {
+    color: $grey-dark;
+    font-weight: 200;
+  }
+
+  &::before {
+    background-color: rgba($grey-dark, .2);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transform-origin: 0 100%;
+    transition: .3s ease-in-out;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &:hover {
+    .project-link__link {
+      transform: skewX(-3deg);
+    }
+
+
+    &::before {
+      transform: scale(.98);
+    }
+  }
+}

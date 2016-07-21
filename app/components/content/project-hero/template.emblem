@@ -1,4 +1,4 @@
-.project-hero__wrapper style="background-image: url({{featuredImage}});"
+.project-hero__wrapper style="background-image: url(https://s3-eu-west-1.amazonaws.com/joedinsdale-assets-dev/images/original/{{content.featured_image}});"
   .project-hero__inner.u-vertical-align__child
-    h1.project-hero__title = title
-    span.project-hero__tagline = tagline
+    h1.project-hero__title = content.title
+    h2.project-hero__tagline = content.excerpt

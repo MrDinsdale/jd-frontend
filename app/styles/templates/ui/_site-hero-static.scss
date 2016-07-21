@@ -1,9 +1,17 @@
 .site-hero-static {
   background: $grey-dark url('/images/ui/bg-diag-grey.png') top left;
   background-size: 6px;
-  padding: 6em 0;
+  padding: 8em 0;
   position: relative;
   z-index: 50;
+
+  @media(max-width: $break-m) {
+    font-size: .75em;
+  }
+
+  @media(max-width: $break-s) {
+    font-size: .625em;
+  }
 
   &__border {
     top: 100%;

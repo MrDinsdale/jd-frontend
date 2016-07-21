@@ -3,7 +3,7 @@
     background-position: center;
     background-size: cover;
     color: $cream;
-    height: 100vh;
+    height: 90vh;
     position: relative;
     text-align: center;
 
@@ -27,15 +27,22 @@
   &__title {
     font-size: 4em;
     margin-bottom: 0;
-    text-shadow: 0 0 .5em rgba($grey-dark, .5);
+
+    @media(max-width: $break-s) {
+      font-size: 3em;
+    }
   }
 
   &__tagline {
+    color: $orange;
     display: block;
     font-family: $font-headline;
     font-size: 1.25em;
     letter-spacing: .05em;
-    text-shadow: 0 0 .25em rgba($grey-dark, .5);
     text-transform: uppercase;
+
+    @media(max-width: $break-s) {
+      font-size: 1.25em;
+    }
   }
 }

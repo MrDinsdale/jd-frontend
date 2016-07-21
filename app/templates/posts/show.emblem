@@ -1,7 +1,9 @@
-= content.post-hero featuredImage='http://joedinsdale.co.uk/images/posts/2015-10-22--working-with-ember-components/featured.jpg' title=post.title tagline=post.excerpt
+= content.post-hero content=post
 
 .cactus__w
   .cactus__g
     .cactus__u--1
-      .post-body
-        = markdown-to-html markdown=post.body
+      .post-body.content--markdown
+        = markdown-to-html markdown=post.body extensions=extensionList
+
+= content.post-related first=relatedFirst second=relatedSecond

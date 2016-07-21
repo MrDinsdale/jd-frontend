@@ -5,9 +5,13 @@
   top: 0;
   z-index: 200;
 
-  // @media(max-width: $break-m) {
-  //   font-size: .875em;
-  // }
+  @media(max-width: $break-m) {
+    font-size: .875em;
+  }
+
+  @media(max-width: $break-s) {
+    font-size: .75em;
+  }
 
   .nav-button__toggle,
   &__logo {

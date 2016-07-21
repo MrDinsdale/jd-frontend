@@ -1,0 +1,22 @@
+if (and first second)
+  .post-list
+    .cactus__g--gutter-none
+        .cactus__u--1-2.cactus__u--m-1
+          = tile.related-tile content=first target='posts.show' type='prev'
+
+        .cactus__u--1-2.cactus__u--m-1
+          = tile.related-tile content=second target='posts.show' type='next'
+
+else
+  if first
+    .post-list
+      .cactus__g--gutter-none
+          .cactus__u--1
+            = tile.related-tile content=first target='posts.show' type='single'
+
+  else
+    if second
+      .post-list
+        .cactus__g--gutter-none
+            .cactus__u--1
+              = tile.related-tile content=second target='posts.show' type='single'

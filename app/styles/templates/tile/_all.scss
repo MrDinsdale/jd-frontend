@@ -1,2 +1,4 @@
-@import 'post-tile';
-@import 'project-tile';
+@import 'tile-shared',
+        'post-tile',
+        'project-tile',
+        'related-tile';

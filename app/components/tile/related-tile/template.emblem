@@ -1,0 +1,6 @@
+= link-to 'posts.show' content.id
+  .related-tile__wrapper style="background-image: url(https://s3-eu-west-1.amazonaws.com/joedinsdale-assets-dev/images/thumb/{{content.featured_image}});"
+    .related-tile__inner.u-vertical-align__child
+      span.related-tile__date = moment-from-now content.created_at
+      h3.related-tile__title = content.title
+      span.related-tile__tagline = content.excerpt

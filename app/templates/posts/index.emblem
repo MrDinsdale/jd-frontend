@@ -3,4 +3,3 @@
     each posts as |post|
       .cactus__u--1-2.cactus__u--m-1
         = tile.post-tile content=post target='posts.show'
-

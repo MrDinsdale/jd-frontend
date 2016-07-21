@@ -1,7 +1,11 @@
-= content.project-hero featuredImage=project.featuredImage title=project.title tagline=project.excerpt
+= content.project-hero content=project
 
 .cactus__w
   .cactus__g
     .cactus__u--1
       .project-body
         = markdown-to-html markdown=project.body
+
+    if project.project_url
+      .cactus__u--1.ta--right
+        = content.project-link target=project.project_url title=project.title

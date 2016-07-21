@@ -1,9 +1,10 @@
 .post-hero {
   &__wrapper {
+    // background-attachment: fixed;
     background-position: center;
     background-size: cover;
     color: $cream;
-    height: 75vh;
+    height: 60vh;
     position: relative;
     text-align: center;
 
@@ -18,27 +19,44 @@
       right: 0;
       top: 0;
     }
+
+    @media(max-width: $break-s) {
+      height: 60vh;
+    }
   }
 
   &__inner {
-    bottom: 25vh;
+    bottom: 0;
     left: 0;
     padding-bottom: 2em;
     position: absolute;
     right: 0;
     text-align: left;
+
+    @media(max-width: $break-s) {
+      bottom: 0;
+    }
   }
 
   &__title {
     font-size: 4em;
     margin-bottom: 0;
+
+    @media(max-width: $break-s) {
+      font-size: 3em;
+    }
   }
 
   &__tagline {
     color: $orange;
     display: block;
+    font-family: $font-headline;
     font-size: 1.25em;
     letter-spacing: .05em;
     text-transform: uppercase;
+
+    @media(max-width: $break-s) {
+      font-size: 1.125em;
+    }
   }
 }

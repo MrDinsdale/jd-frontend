@@ -29,12 +29,20 @@ em {
   color: $orange;
 }
 
-hr {
+.divider {
   background-color: $grey-dark;
   border: 0;
   height: .25em;
-  margin: .5em auto 2em;
+  margin: 2em 0;
   width: 4em;
+}
+
+.divider--branding {
+  margin: .5em auto 2em;
+}
+
+.divider--light {
+  background-color: $cream;
 }
 
 // text color

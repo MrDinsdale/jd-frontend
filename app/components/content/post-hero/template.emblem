@@ -1,7 +1,8 @@
-.post-hero__wrapper style="background-image: url({{featuredImage}});"
-  .post-hero__inner
-    .cactus__w
-      .cactus__g
-        .cactus__u--1
-          h1.post-hero__title = title
-          h2.post-hero__tagline = tagline
+= liquid-bind content use="wipe" as | currentContent |
+  .post-hero__wrapper style="background-image: url(https://s3-eu-west-1.amazonaws.com/joedinsdale-assets-dev/images/original/{{ currentContent.featured_image }});"
+    .post-hero__inner
+      .cactus__w
+        .cactus__g
+          .cactus__u--1
+            h1.post-hero__title = currentContent.title
+            h2.post-hero__tagline = currentContent.excerpt
