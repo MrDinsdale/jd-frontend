@@ -19,25 +19,19 @@
     position: relative;
 
     &::before {
-      background: rgba($orange,0);
-      bottom: .5em;
+      background: $cream;
+      bottom: 0;
       content: '';
       display: block;
-      left: .5em;
+      height: 0;
+      left: 0;
       position: absolute;
-      right: .5em;
-      top: .5em;
-      transform: rotate(45deg);
-      transform-origin: 50%;
-      transition: .25s;
+      right: 0;
+      transition: .5s;
     }
 
     &:hover::before {
-      background: $cream;
-      bottom: -.25em;
-      left: -.25em;
-      right: -.25em;
-      top: -.25em;
+      height: 100%;
     }
 
     .ua-ie & {
