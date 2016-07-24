@@ -8,5 +8,6 @@ export default Model.extend({
   body: attr('string'),
   related: attr(),
   created_at: attr('date'),
-  updated_at: attr('date')
+  updated_at: attr('date'),
+  published_at: attr('date')
 });

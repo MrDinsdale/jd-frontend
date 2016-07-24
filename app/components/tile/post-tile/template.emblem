@@ -1,6 +1,6 @@
 = link-to 'posts.show' content.id
   .post-tile__wrapper style="background-image: url(https://s3-eu-west-1.amazonaws.com/joedinsdale-assets-dev/images/thumb/{{content.featured_image}});"
     .post-tile__inner.u-vertical-align__child
-      span.post-tile__date = moment-from-now content.created_at
+      span.post-tile__date = moment-from-now content.published_at
       h3.post-tile__title = content.title
       span.post-tile__tagline = content.excerpt

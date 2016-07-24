@@ -14,12 +14,12 @@ export default Ember.Component.extend({
     });
 
     this.timeline.add(TweenLite.to(logoJ, 1, {
-      strokeDashoffset: 0,
+      strokeDashoffset: '0%',
       ease: Power2.easeInOut
     }), 0);
 
     this.timeline.add(TweenLite.to(logoD, 1, {
-      strokeDashoffset: 0,
+      strokeDashoffset: '400%',
       ease: Power2.easeInOut
     }), 0.1);
   }).on('didInsertElement'),
