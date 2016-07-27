@@ -1,3 +1,4 @@
+.post-tile,
 .project-tile {
   &__wrapper {
     height: 50vh;
@@ -25,6 +26,7 @@
     overflow: hidden;
     transition: .5s ease-out;
 
+    .post-tile__wrapper:hover &,
     .project-tile__wrapper:hover & {
       max-height: 1.5em;
     }

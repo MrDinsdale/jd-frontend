@@ -4,7 +4,12 @@ body {
   font-weight: 300;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $font-headline;
   font-weight: 800;
   text-transform: uppercase;
@@ -26,7 +31,9 @@ strong {
 }
 
 em {
-  color: $orange;
+  color: $grey-dark;
+  font-style: italic;
+  font-weight: 600;
 }
 
 .divider {

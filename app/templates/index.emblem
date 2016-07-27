@@ -14,6 +14,9 @@
       .cactus__u--1-2.cactus__u--m-1
         .intro-copy__wrapper
           p.intro-copy__main I love all things web. I especially love working on DRY, scalable projects utilising the latest technologies.
-          p I’m a frontend developer working at Sky in Leeds working primarily with <em>HTML</em>, <em>CSS</em> and <em>React</em> to build scalable fronend applications and components.
+
+          p I’m a frontend developer working at Sky in Leeds working primarily with <em>HTML</em>, <em>Scss</em> and <em>React</em> to build performant front-end applications and components.
+
           p Previously I have worked on projects for big brands such as <em>MixRadio</em>, <em>Microsoft</em>, <em>EE</em> and <em>Karhoo</em>.
+
           p When I'm not working on design or web development I enjoy watching films, playing bass and drinking coffee.

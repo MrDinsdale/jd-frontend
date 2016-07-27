@@ -29,6 +29,10 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV.googleAnalytics = {
+      webPropertyId: process.env.GOOGLE_ANALYTICS_ID,
+      tracker: 'ga.js'
+    };
   }
 
   return ENV;
