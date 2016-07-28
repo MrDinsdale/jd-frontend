@@ -1,5 +1,7 @@
 import Ember from 'ember';
+import config from '../../../config/environment';
 
 export default Ember.Component.extend({
-  classNames: ['post-tile']
+  classNames: ['post-tile'],
+  assetPath: config.assetNamespace
 });

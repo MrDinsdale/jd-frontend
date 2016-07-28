@@ -18,6 +18,7 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
+    ENV.assetNamespace = 'joedinsdale-assets-dev'
   }
 
   if (environment === 'test') {
@@ -29,6 +30,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV.assetNamespace = 'joedinsdale-assets'
     ENV.googleAnalytics = {
       webPropertyId: process.env.GOOGLE_ANALYTICS_ID,
       tracker: 'ga.js'

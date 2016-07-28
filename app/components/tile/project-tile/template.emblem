@@ -1,5 +1,5 @@
 = link-to 'projects.show' content.id
-  .project-tile__wrapper style="background-image: url(https://s3-eu-west-1.amazonaws.com/joedinsdale-assets-dev/images/original/{{content.featured_image}});"
+  .project-tile__wrapper style="background-image: url(https://s3-eu-west-1.amazonaws.com/{{assetPath}}/images/original/{{content.featured_image}});"
     .project-tile__inner.u-vertical-align__child
       h3.project-tile__title = content.title
       span.project-tile__tagline = content.excerpt

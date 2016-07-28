@@ -1,5 +1,5 @@
 = liquid-bind content use="wipe" as | currentContent |
-  .post-hero__wrapper style="background-image: url(https://s3-eu-west-1.amazonaws.com/joedinsdale-assets-dev/images/original/{{ currentContent.featured_image }});"
+  .post-hero__wrapper style="background-image: url(https://s3-eu-west-1.amazonaws.com/{{assetPath}}/images/original/{{ currentContent.featured_image }});"
     .post-hero__inner
       .cactus__w
         .cactus__g
