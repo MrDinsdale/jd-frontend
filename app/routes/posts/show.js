@@ -23,5 +23,42 @@ export default Ember.Route.extend({
     }
 
     this.set('titleToken', post.get('title'));
+
+    let description = post.get('excerpt');
+
+    let pageMeta = [{
+      type: 'meta',
+      tagId: 'meta-description-tag',
+      attrs: {
+        name: 'description',
+        content: description
+      }
+    },
+    {
+      type: 'meta',
+      tagId: 'twitter-description-tag',
+      attrs: {
+        name: 'twitter:description',
+        content: description
+      }
+    },
+    {
+      type: 'meta',
+      tagId: 'og-description-tag',
+      attrs: {
+        name: 'og:description',
+        content: description
+      }
+    },
+    {
+      type: 'meta',
+      tagId: 'schema-description-tag',
+      attrs: {
+        itemprop: 'description',
+        content: description
+      }
+    }];
+
+    this.set('headTags', pageMeta);
   }
 });
