@@ -12,7 +12,7 @@ export default Ember.Route.extend({
 
     this.set('titleToken', project.get('title'));
 
-    let description = project.get('excerpt');
+    let description = project.get('title') + " project overview - " + project.get('excerpt');
 
     let pageMeta = [{
       type: 'meta',
