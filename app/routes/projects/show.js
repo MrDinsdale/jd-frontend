@@ -13,6 +13,7 @@ export default Ember.Route.extend({
     this.set('titleToken', project.get('title'));
 
     let description = project.get('title') + " project overview - " + project.get('excerpt');
+    let image = "https://s3-eu-west-1.amazonaws.com/" + project.get('assetPath') + "/images/thumb/" + project.get('featured_image');
 
     let pageMeta = [{
       type: 'meta',
@@ -44,6 +45,30 @@ export default Ember.Route.extend({
       attrs: {
         itemprop: 'description',
         content: description
+      }
+    },
+    {
+      type: 'meta',
+      tagId: 'meta-image-tag',
+      attrs: {
+        name: 'image',
+        content: image
+      }
+    },
+    {
+      type: 'meta',
+      tagId: 'twitter-image-tag',
+      attrs: {
+        name: 'twitter:image',
+        content: image
+      }
+    },
+    {
+      type: 'meta',
+      tagId: 'og-image-tag',
+      attrs: {
+        name: 'og:image',
+        content: image
       }
     }];
 
