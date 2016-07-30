@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import config from '../../config/environment';
 
 export default Ember.Route.extend({
   model: function(params) {
@@ -13,7 +14,7 @@ export default Ember.Route.extend({
     this.set('titleToken', project.get('title'));
 
     let description = project.get('title') + " project overview - " + project.get('excerpt');
-    let image = "https://s3-eu-west-1.amazonaws.com/" + project.get('assetPath') + "/images/thumb/" + project.get('featured_image');
+    let image = "https://s3-eu-west-1.amazonaws.com/" + config.assetNamespace + "/images/thumb/" + project.get('featured_image');
 
     let pageMeta = [{
       type: 'meta',
