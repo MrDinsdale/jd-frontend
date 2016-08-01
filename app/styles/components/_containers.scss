@@ -10,20 +10,3 @@ body {
 .pos-r {
   position: relative;
 }
-
-[class*="content-block"] {
-  padding: 4em 0;
-}
-
-.content-block {
-  &--page-head {
-    background-color: $cream;
-    padding-top: 8em;
-    padding-bottom: 0;
-  }
-}
-
-.content-tile {
-  margin-bottom: 1em;
-}
-
